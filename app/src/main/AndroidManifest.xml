@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chris.conference_manage">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MenuRootActivity"/>
+        <activity android:name=".Activity.RoomDisActivity" />
+        <activity android:name=".Activity.StaffDisActivity" />
+        <activity android:name=".Activity.OrderDisActivity" />
+        <activity android:name=".Activity.MenuStaffActivity" />
+        <activity android:name=".Activity.AddRoomActivity" />
+        <activity android:name=".Activity.AddStaffActivity" />
+
+    </application>
+
+</manifest>

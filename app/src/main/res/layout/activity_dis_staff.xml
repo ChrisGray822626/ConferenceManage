@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/staff_dis"
+    android:orientation="vertical"
+    android:background="@drawable/dis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/staff_photo"
+        android:layout_width="390px"
+        android:layout_height="567px"
+        android:layout_gravity="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/staff_info_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

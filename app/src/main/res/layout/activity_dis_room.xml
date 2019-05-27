@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dis"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/room_info_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/room_order_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

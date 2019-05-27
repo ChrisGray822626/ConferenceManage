@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu"
+        android:background="@drawable/menu"
+
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/list_interface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/title"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/root_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F7F0F0"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/account_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:maxWidth="100dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp" />
+
+                <TextView
+                    android:id="@+id/account_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/account_photo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="55dp"
+                    android:layout_toRightOf="@+id/account_photo"
+                    android:text="姓名"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/account_photo"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_toRightOf="@+id/account_photo"
+                    android:text="ID:"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/account_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/id"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@+id/id"
+                    android:text="0000000"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#DFDDDD"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="信息查询"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#DFDDDD"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="用户反馈"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#DFDDDD"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="关于系统"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#DFDDDD"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="设置"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"/>
+
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_exit_background"
+                android:text="退出登录"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@drawable/menubar_background">
+
+        <LinearLayout
+            android:id="@+id/goto_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/order_img"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:padding="2dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:src="@drawable/order_root_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goto_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/room_img"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/room_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goto_staff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/staff_img"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/staff_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goto_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_img"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/account_root_grey" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

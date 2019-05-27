@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F7F0F0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:padding="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="22sp"
+            android:text="添加房间信息"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/people_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="容纳人数:"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/people_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:entries="@array/people_spingarr"
+            android:textColor="@color/cardview_dark_background">
+
+        </Spinner>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/computer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="是否有电脑:"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/computer_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/cardview_dark_background"
+            android:entries="@array/yes_not_spingarr">
+        </Spinner>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/projector_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="是否有投影仪:"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/projector_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/cardview_dark_background"
+            android:entries="@array/yes_not_spingarr">
+        </Spinner>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/microphone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="是否有麦克风:"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/microphone_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/cardview_dark_background"
+            android:entries="@array/yes_not_spingarr">
+        </Spinner>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_submit_background"
+        android:padding="5dp"
+        android:textSize="25sp"
+        android:textColor="@color/cardview_light_background"
+        android:text="提交"/>
+
+</LinearLayout>

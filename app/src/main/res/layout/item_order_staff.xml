@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/cardview_dark_background"
+            android:text="房间号：" />
+
+        <TextView
+            android:id="@+id/order_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"
+            android:text="议题："/>
+
+        <TextView
+            android:id="@+id/order_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:text="会议日期：" />
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:text="2019-1-1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
